@@ -4,8 +4,6 @@ from tkinter import ttk
 import datetime
 def LogCurTime():
     now = datetime.datetime.now()
-    #print ("Current date and time : ")
-    #print (now.strftime("%Y-%m-%d %H:%M:%S"))
     Createstatus.set(now.strftime("%Y-%m-%d %H:%M:%S"))
     return
 
@@ -26,7 +24,7 @@ def PrintToday():
 
 root = Tk()
 root.geometry("400x100+100+100")
-root.title("Python Current Date And Time GUI App")
+root.title("Python Today's Date Time Day GUI App")
 
 mainframe = ttk.Frame(root, padding="3 3 12 12")
 mainframe.grid(column=0, row=0, sticky=(N, W, E, S))
